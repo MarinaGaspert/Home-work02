@@ -6,9 +6,11 @@
 	
 	int number = ReadInt("Введите число: ");
 	int count = number.ToString().Length;
-	Console.Write(MakeArray(number, count));
+	Console.Write(Array(number, count));
 	
-// Функция принимает сообщение  и выводит результат введенных данных пользователем.
+/*Функция принимает сообщение  и выводит результат введенных данных пользователем. Цифровые значения. 
+Преобразование Convert.To*/
+
 	int ReadInt(string message)
 	{
 	    Console.Write(message);
@@ -16,7 +18,7 @@
 	}
 	
 	// Функция  выводит третью цифру числа. 
-	int MakeArray(int a, int b)
+	int Array(int a, int b)
 	{
 	int result = 0;
 	    if (b < 3)
